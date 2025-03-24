@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHA PARFUME</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">
+            <span class="logo">M<br>HA</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/html/homepage.html">Home</a></li>
+            <li><a href="/html/aboutweb2.html">About</a></li>
+            <li><a href="/html/teams.html">Teams</a></li>
+            <li><a href="/html/products.html">Products</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+            <!-- Tombol Register Now -->
+            <li><button class="register-btn" id="openModal">Register Now →</button></li>
+            <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+
+
+        </ul>
+        <button class="hamburger">☰</button>
+    </nav>
+
+    <!-- Content -->
+    <div class="main-content">
+        <section class="hero">
+            <h1>MAHA PARFUME</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        </section>
+    </div>
+
+    <!-- Modal Login & Sign In -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Login</h2>
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Sign In Form (Hidden by Default) -->
+        <form id="signup-form" style="display: none;">
+            <label for="signup-name">Nama:</label>
+            <input type="text" id="signup-name" required>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" required>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Login dengan Google -->
+        <div id="g_id_onload"
+     data-client_id="1052306346471-m16nk15ol3fh7iu4loae23g52vs872lk.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-shape="rectangular"
+     data-logo_alignment="left">
+</div>
+
+
+        <!-- Toggle Login / Sign Up -->
+        <p id="toggle-text">Belum punya akun? <a href="#" id="toggle-link">Sign up</a></p>
+    </div>
+</div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>MAHA PARFUME</h2>
+                <p>Copyright © 2020 Landify UI Kit. All rights reserved</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Stay up to date</h3>
+                <input type="email" placeholder="Your email address">
+                <button>→</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/webtwo.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
